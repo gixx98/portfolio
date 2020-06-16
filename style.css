@@ -182,7 +182,7 @@ input[type="text"]{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 60;
@@ -222,11 +222,15 @@ input[type="text"]{
         left: 10%;
         width: 80%;
         text-align: center;
-        height: 400px;
+        height: 500px;
         font-size: 20px;
         line-height: 30px;
         border-radius: 25px;
         padding:15px 0;
+    }
+
+    .about-text{
+        top:35%;
     }
 
     .portrait{
@@ -240,6 +244,11 @@ input[type="text"]{
     
     .contact-second.second{
         top:70%;
+    }
+
+    .about-text{
+        -ms-transform: translateY(-35%);
+        transform: translateY(-35%);
     }
 
 }
