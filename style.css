@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#logo{
+    position: fixed;
+    width: 75px;
+    left:150px;
+    z-index: 10;
+    transition: 0.5s all;
+}
+
+
+ul{
+    position: fixed;
+    top:0;
+    width: 100%;
+    list-style-type: none;
+    height: 75px;
+    background-color: #000;
+}
+li{
+    float: right;
+    position: relative;
+    right: 100px;
+    top:5px;
+    font-size:20px;
+}
+
+li a{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    padding: 18px;
+    transition: 0.5s all;
+}
+
+.underline:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+body{
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main{
+    display: flex;
+    height: 500px;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 50;
+}
+
+.introduction{
+    position: absolute;
+    top:200px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    left:200px;
+    color: white;
+}
+
+.about-container{
+    position: absolute;
+    background-color:white;
+    top:30%;
+    left: 30%;
+    width: 60%;
+    text-align: center;
+    height: 300px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 25px;
+}
+
+.about-text{
+    position: absolute;
+    top:50%;
+    padding: 25px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.portrait{
+    width: 300px;
+    border-radius: 45px;
+    position: absolute;
+    top:20%;
+    margin:20px;
+    left:1%;
+    
+}
+
+form{
+    position: absolute;
+    top:20%;
+    color:white;
+    font-size: 20px;
+    left:5%;
+}
+
+input[type="text"]{
+    width: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-container{
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    position: absolute;
+    top:20%;
+    left:2%;
+    color: black;
+}
+
+.contact-second{
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    position: absolute;
+    top:50%;
+    right:2%;
+    color: black;
+    font-size: 18px;
+}
+
+.contact-second.second{
+    top:70%;
+}
+
+@media only screen and (max-width: 700px){
+    #logo{
+        position: fixed;
+        width: 75px;
+        left:20px;
+        
+    }
+
+    li{
+        right: 50px;
+    }
+    .introduction{
+        left:100px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1130px){
+    .about-container{
+        position: absolute;
+        background-color:white;
+        top:20%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        height: 400px;
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 25px;
+        padding:15px 0;
+    }
+
+    .portrait{
+        display: none;
+    }
+
+    .contact-second{
+        top:50%;
+        font-size: 16px;
+    }
+    
+    .contact-second.second{
+        top:70%;
+    }
+
+}
